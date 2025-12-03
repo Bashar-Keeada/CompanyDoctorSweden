@@ -622,9 +622,18 @@ vercel --prod
 
 ---
 
-**Skapad:** 2025-01-22  
-**Version:** 1.0.0  
+**Skapad:** 2024-11-23  
+**Senast uppdaterad:** 2024-11-26  
+**Version:** 1.1.0  
 **Status:** Production Ready ✅
+
+### 📝 Senaste ändringar (v1.1.0)
+- ✅ Kundrecension #3 uppdaterad: Daniel, VD, Swed Q AB
+- ✅ Deployment-guider skapade (7 nya dokument)
+- ✅ Backend email-adresser uppdaterade till info@companydoktor.com
+- ✅ Standalone HTML-fil skapad för delning
+
+**Se [CHANGELOG.md](CHANGELOG.md) för fullständig versionshistorik**
 
 ---
 
