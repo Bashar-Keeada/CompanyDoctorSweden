@@ -170,8 +170,8 @@ const translations = {
         testimonial2_author: "Marcus Johansson",
         testimonial2_title: "Grundare, Nordic Consulting",
         testimonial3_text: "Fantastisk kompetens och genuint engagemang. De följde med oss hela vägen från diagnos till implementering. Idag har vi ISO-certifiering, digitala processer och ett mycket starkare team.",
-        testimonial3_author: "Daniel",
-        testimonial3_title: "VD, Swed Q AB",
+        testimonial3_author: " Lindberg",
+        testimonial3_title: "VD, Green Solutions Sweden",
         
         // Join Clinic Section
         join_title: "Bli en del av vår klinik",
@@ -365,8 +365,8 @@ const translations = {
         testimonial2_author: "Marcus Johansson",
         testimonial2_title: "Founder, Nordic Consulting",
         testimonial3_text: "Fantastic expertise and genuine commitment. They accompanied us all the way from diagnosis to implementation. Today we have ISO certification, digital processes and a much stronger team.",
-        testimonial3_author: "Daniel",
-        testimonial3_title: "CEO, Swed Q AB",
+        testimonial3_author: "Sofia Lindberg",
+        testimonial3_title: "CEO, Green Solutions Sweden",
         
         // About Section
         about_title: "About Company Doktor",

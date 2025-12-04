@@ -24,7 +24,7 @@
             <div class="nav-brand">
                 <i class="fas fa-stethoscope"></i>
                 <span class="brand-name">Company Doktor</span>
-                <span class="brand-tagline">by Keeada Management</span>
+                
             </div>
             
             <div class="nav-menu" id="navMenu">
@@ -34,14 +34,15 @@
                     <li><a href="#process" class="nav-link" data-translate="nav_process">Så fungerar det</a></li>
                     <li><a href="#results" class="nav-link" data-translate="nav_results">Resultat</a></li>
                     <li><a href="#about" class="nav-link" data-translate="nav_about">Om oss</a></li>
-                    <li><a href="#join-clinic" class="nav-link" data-translate="nav_join">Bli Doktor</a></li>
+                    
                     <li><a href="#contact" class="nav-link" data-translate="nav_contact">Kontakt</a></li>
                 </ul>
                 <button class="language-toggle" id="languageToggle" title="Switch to English">
                     <i class="fas fa-globe"></i>
                     <span>EN</span>
                 </button>
-                <a href="#contact" class="btn btn-primary" data-translate="nav_cta">Boka gratis konsultation</a>
+                
+                <a href="#join-clinic" class="btn btn-primary" data-translate="nav_join">Bli Doktor</a>
             </div>
             
             <div class="nav-toggle" id="navToggle">
@@ -553,7 +554,7 @@
                                 <i class="fas fa-user"></i>
                             </div>
                             <div class="author-info">
-                                <div class="author-name" data-translate="testimonial2_author">Jean Kristoffer</div>
+                                <div class="author-name" data-translate="testimonial2_author">Marcus Johansson</div>
                                 <div class="author-title" data-translate="testimonial2_title">Grundare, Nordic Consulting</div>
                             </div>
                         </div>
@@ -575,8 +576,8 @@
                                 <i class="fas fa-user"></i>
                             </div>
                             <div class="author-info">
-                                <div class="author-name" data-translate="testimonial3_author">Daniel</div>
-                                <div class="author-title" data-translate="testimonial3_title">VD, Swed Q AB</div>
+                                <div class="author-name" data-translate="testimonial3_author">Lindberg</div>
+                                <div class="author-title" data-translate="testimonial3_title">VD, Green Solutions Sweden</div>
                             </div>
                         </div>
                     </div>
@@ -1164,60 +1165,71 @@
                 </div>
                 
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Namn *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="company">Företag *</label>
-                            <input type="text" id="company" name="company" required>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="phone">Telefon</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="service">Vilket paket är du intresserad av?</label>
-                            <select id="service" name="service">
-                                <option value="">Välj ett alternativ</option>
-                                <option value="checkup">Check-Up</option>
-                                <option value="diagnos">Diagnos & Recept</option>
-                                <option value="treatment">Full Treatment</option>
-                                <option value="subscription">Abonnemang</option>
-                                <option value="unsure">Osäker / Vill diskutera</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Berätta om dina utmaningar *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Beskriv kort vilka utmaningar ert företag står inför..."></textarea>
-                        </div>
-                        
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="consent" required>
-                                <span>Jag godkänner att Company Doktor kontaktar mig angående min förfrågan *</span>
-                            </label>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-large btn-block">
-                            <i class="fas fa-paper-plane"></i>
-                            Skicka förfrågan
-                        </button>
-                        
-                        <div class="form-message" id="formMessage"></div>
-                    </form>
+                    <form class="contact-form" id="contactForm"
+      action="https://formspree.io/f/mjknoweb"
+      method="POST">
+    <div class="form-group">
+        <label for="name">Namn *</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="company">Företag *</label>
+        <input type="text" id="company" name="company" required>
+    </div>
+    
+    <div class="form-row">
+        <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="service">Vilket paket är du intresserad av?</label>
+        <select id="service" name="service">
+            <option value="">Välj ett alternativ</option>
+            <option value="checkup">Check-Up</option>
+            <option value="diagnos">Diagnos & Recept</option>
+            <option value="treatment">Full Treatment</option>
+            <option value="subscription">Abonnemang</option>
+            <option value="unsure">Osäker / Vill diskutera</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="message">Berätta om dina utmaningar *</label>
+        <textarea id="message" name="message" rows="5" required
+                  placeholder="Beskriv kort vilka utmaningar ert företag står inför..."></textarea>
+    </div>
+    
+    <div class="form-group checkbox-group">
+        <label class="checkbox-label">
+            <input type="checkbox" name="consent" required>
+            <span>Jag godkänner att Company Doktor kontaktar mig angående min förfrågan *</span>
+        </label>
+    </div>
+
+    <!-- Formspree options -->
+    <input type="hidden" name="_subject" value="Nytt meddelande från CompanyDoktor.com">
+    <input type="hidden" name="_language" value="sv">
+    <!-- Optional: send user back to your site after submit -->
+    <!-- <input type="hidden" name="_next" value="https://companydoktor.com/tack.html"> -->
+
+    <button type="submit" class="btn btn-primary btn-large btn-block">
+        <i class="fas fa-paper-plane"></i>
+        Skicka förfrågan
+    </button>
+
+    <div class="form-message" id="formMessage"></div>
+</form>
+
+
                 </div>
             </div>
         </div>
